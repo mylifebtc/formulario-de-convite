@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de convite</title>
+  <link rel="stylesheet" href="styles/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <aside>
+      <div class="aside-container">
+        <div class="aside">
+          <img src="assets/Logo.svg" alt="logo festa">
+          <h2>Festivite</h2>
+          <p>
+            Crie um convite digital para o seu evento
+          </p>
+        </div>
+        <img src="assets/Background.png" alt="" class="back-image">
+      </div>
+    </aside>
+
+  
+    <main>
+      <form>
+      <div class="main-container">
+        <header>
+          Crie seu convite
+        </header>
+        <div class="container-right">
+          <img src="assets/icons/calendar.svg" alt="ícone calendário">
+          <span>Sobre o evento</span>
+        </div>
+        <div class="input-wrapper">
+          <label for="Title">Título</label>
+          <input id="evento" type="text" placeholder="Nome do evento">
+        </div>
+        <div class="input-wrapper">
+          <label for="date">Início</label>
+          <input id="date" type="date">
+          <label for="date">Fim</label>
+          <input id="date" type="date">
+        </div>
+
+        <div class="select-wrapper">
+          <label for="type">Tipo</label>
+          <input id="type" type="checkbox">
+          <label for="address">Local</label>
+          <input id="address" type="text" placeholder="Link ou endereço">
+        </div>
+
+        <div class="textarea-wrapper">
+          <label for="event-details">Descrição</label>
+          <textarea name="event-details" id="event-details" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
+        </div>
+      </div>
+    </form>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+#app {
+  display: grid;
+  grid-template-columns: 36% 64%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;
+  padding: 5rem 0 5rem 0;
+
+   & .main-container {
+    max-width: 51.25rem;
+    
+   }
+}
+
+.aside {
+  position: absolute;
+   margin-left: 2rem;
+   margin-top: 2rem;
+
+   h2 {
+    margin-top: 1rem;
+    color: #FF598B;
+    font: var(--logo)
+   }
+
+   p {
+    color: var(--text-heading);
+    font: var(--body-md);
+   }
+
+  img {
+  max-width: 2.86rem;
+  height: 3rem;
+  }
+}
+
+aside {
+  background-color: var(--shape-background);
+  max-width: 25rem;
+}
+
+.back-image {
+  max-width: 25rem;
+}
+
+
+/* Parte do 2 container */
+
+header {
+  font: var(--heading-md);
+  color: var(--text-heading);
+}
