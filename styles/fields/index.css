@@ -1,0 +1,15 @@
+@import url(radio.css);
+
+input, textarea{
+  width: 100%;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+}
+
+
+
+#inline {
+  display: flex;
+}

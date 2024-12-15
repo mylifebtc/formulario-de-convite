@@ -32,38 +32,59 @@
     </aside>
 
   
-    <main>
+    <main class="container">
+      <header>
+        Crie seu convite
+      </header>
       <form>
       <div class="main-container">
-        <header>
-          Crie seu convite
-        </header>
-        <div class="container-right">
-          <img src="assets/icons/calendar.svg" alt="ícone calendário">
+      <fieldset>
+        <div class="head">
+          <img src="assets/icons/calendar.svg" alt="ícone calendário" id="calendario">
           <span>Sobre o evento</span>
         </div>
+        
         <div class="input-wrapper">
-          <label for="Title">Título</label>
-          <input id="evento" type="text" placeholder="Nome do evento">
-        </div>
-        <div class="input-wrapper">
-          <label for="date">Início</label>
-          <input id="date" type="date">
-          <label for="date">Fim</label>
-          <input id="date" type="date">
+          <label for="evento">Título</label>
+          <input id="evento" type="text" placeholder="Nome do evento" name="evento">
         </div>
 
-        <div class="select-wrapper">
-          <label for="type">Tipo</label>
-          <input id="type" type="checkbox">
-          <label for="address">Local</label>
-          <input id="address" type="text" placeholder="Link ou endereço">
+        <div class="input-wrapper" id="inline">
+          <div class="input-group">
+          <label for="date">Início</label>
+          <input id="date" type="datetime-local" name="date">
+          </div>
+          <div class="input-group">
+          <label for="date-end">Fim</label>
+          <input id="date-end" type="datetime-local" name="date-end">
+          </div>
+        </div>
+
+        
+        <div class="radio-wrapper" id="inline">
+          <label for="turn">Tipo</label>
+         <div class="radio-inner">
+          <fieldset class="radios">
+            <input type="radio" name="turn" value="type" id="Presencial">
+            <!-- <img src="assets/icons/building-2.svg" alt="icone do predio"> -->
+            <label for="Presencial"><img src="assets/icons/building-2.svg" alt="icone do predio">Presencial</label>
+
+            <input type="radio" name="turn" value="type" id="Online">
+            <!-- <img src="assets/icons/video.svg" alt="icone de online"> -->
+            <label for="Online"><img src="assets/icons/video.svg" alt="icone de online">Online</label>
+          </fieldset>
+         </div>
+         <div class="input-radio">
+          <label for="local">Local</label>
+          <input type="text" id="local" name="local" placeholder="Link ou endereço">
+         </div>
         </div>
 
         <div class="textarea-wrapper">
           <label for="event-details">Descrição</label>
           <textarea name="event-details" id="event-details" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
         </div>
+    </fieldset>
       </div>
     </form>
     </main>
