@@ -15,7 +15,6 @@
  }
 
  input {
-  /* padding: 0.5rem; */
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -26,14 +25,15 @@
   gap: 1rem;
 }
 
+
 #turn {
   margin-bottom: 0.5rem;
 }
 
-/* Organização principal */
+
 .radios-wrapper {
-  display: flex; /* alinha os grupos um do lado do outro */
-  align-items: flex-start; /* Alinha os grupos ao topo */
+  display: flex;
+  align-items: flex-start; /* Alinha ao topo */
   gap: 1rem;
 }
 
@@ -46,12 +46,12 @@
 }
 
 .radio-inner {
-  display: flex; /* Organiza os inputs radios  na horizontal */
+  display: flex;
 }
 
 .input-radio {
   display: flex;
-  flex-direction: column; /* ajusta o input verticalmente */
+  flex-direction: column; /* ajusta na vertical */
   width: 50%;
 }
 
@@ -101,4 +101,129 @@
   background-color: var(--input-base);
   padding: 2px 3px;
   border-radius: 8px;
+}
+
+
+
+ /*  CORES TYPE RADIO */
+
+.colors {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+
+.color-label {
+  width: 40px;
+  height: 40px;
+  border: 6px solid var(--shape-button);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+
+#color1 + .color-label {
+   background-color: #59B2FF; 
+  }
+
+#color2 + .color-label {
+   background-color: #6A59FF; 
+  }
+
+#color3 + .color-label {
+   background-color: #B259FF; 
+  }
+
+#color4 + .color-label {
+   background-color: #FF59F9; 
+  }
+
+#color5 + .color-label {
+   background-color: #FF598B; 
+  }
+
+#color6 + .color-label {
+   background-color: #FF5959; 
+  }
+
+#color7 + .color-label {
+   background-color: #FF8B59; 
+  }
+
+#color8 + .color-label {
+   background-color: #FFCD59; 
+  }
+
+#color9 + .color-label {
+   background-color: #E1FF59; 
+  }
+
+#color10 + .color-label {
+   background-color: #59FF91; 
+  }
+
+  #color11 + .color-label {
+    background-color: #59FFF9; 
+   }
+
+
+input[type="radio"]:checked + .color-label {
+  outline: .15rem solid var(--brand-light);
+  outline-offset: .1px;
+}
+
+.color-label:hover {
+  border: 6px solid var(--shape-hover);
+}
+
+
+/* EVENTOS TYPE RADIO  */
+
+
+.select-event {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  border-radius: 1rem;
+  box-sizing: border-box
+}
+
+
+
+input[type="radio"] {
+  display: none;
+}
+
+
+label img {
+  margin-bottom: 8px;
+}
+
+input[type="radio"]:checked + label {
+  outline: 2px solid var(--brand-light);
+  
+}
+
+input[type="radio"]:hover + label {
+  padding: 4px 4px 8px 4px;
+  background-color: var(--shape-hover);
+
+}
+.select-event > label {
+  padding: 4px 4px 8px 4px;
+  background-color: var(--shape-button);
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer; 
+  border-radius: 8px;
+  text-align: center;
+
 }

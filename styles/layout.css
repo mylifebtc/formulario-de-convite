@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 36% 64%;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 78.75rem;
 }
 

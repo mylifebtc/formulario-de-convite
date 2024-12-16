@@ -5,7 +5,7 @@
 }
  body {
   background-color: var(--shape-body);
-  overflow: hidden;
+  /* overflow: hidden; */
  }
 
 :root {

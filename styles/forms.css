@@ -86,3 +86,12 @@ input[type="datetime-local"] {
 .custom-radio input:checked + span .icon {
   fill: var(--brand-light);
 }
+
+
+
+input:hover,
+textarea:hover {
+  outline: .1rem solid var(--brand-light);
+  /* border: .125rem solid var(--brand-light); */
+  outline-offset: .1px;
+}
