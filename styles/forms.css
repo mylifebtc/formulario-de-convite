@@ -33,6 +33,7 @@ input {
   margin-bottom: 1rem;
   margin-top: 1rem;
   color: var(--input-placeholder);
+
 }
 
 .select-wrapper :nth-child(3) {
@@ -50,7 +51,6 @@ label {
 
 
 textarea {
-  margin-bottom: 3rem;
   margin-top: 1rem;
   color: var(--input-placeholder);
 }
@@ -95,3 +95,38 @@ textarea:hover {
   /* border: .125rem solid var(--brand-light); */
   outline-offset: .1px;
 }
+
+#marg {
+  margin-top: 3rem;
+}
+
+textarea {
+
+  &:valid + .error {
+    display: none;
+  }
+
+  &:focus:invalid {
+    outline: 0.125rem solid var(--danger);
+  }
+
+  &:not(:focus) + .error {
+    display: none;
+  }
+}
+
+
+ .error {
+  display: flex;
+  gap: .50rem;
+  margin-top: .50rem;
+ }
+
+.error > span {
+  color: var(--danger);
+  font-size: 0.75rem;
+  font-weight: 500 ;
+  font-family: "Open Sans", sans-serif;
+  line-height: auto;
+}
+

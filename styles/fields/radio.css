@@ -225,5 +225,8 @@ input[type="radio"]:hover + label {
   cursor: pointer; 
   border-radius: 8px;
   text-align: center;
-
+  font-size: .875rem;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-heading);
 }

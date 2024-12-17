@@ -46,7 +46,11 @@
         
         <div class="input-wrapper">
           <label for="evento">Título</label>
-          <input id="evento" type="text" placeholder="Nome do evento" name="evento">
+          <input id="evento" type="text" placeholder="Nome do evento" name="evento" required>
+          <!-- <div class="error-text">
+            <img src="assets/icons/circle-alert-red.svg" alt="ícone de erro">
+            <span>Error message</span>
+          </div> -->
         </div>
 
         <div class="input-wrapper" id="inline">
@@ -95,13 +99,17 @@
 
         <div class="textarea-wrapper">
           <label for="event-details">Descrição</label>
-          <textarea name="event-details" id="event-details" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
+          <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento" required></textarea>
+          <div class="error">
+            <img src="assets/icons/circle-alert-red.svg" alt="ícone de erro">
+            <span>Error message</span>
+          </div>
         </div>
     </fieldset>
 
 
     <fieldset>
-      <div class="head">
+      <div class="head" id="marg">
         <img src="assets/icons/paintbrush-vertical.svg" alt="ícone pincel">
         <span>Personalização</span>
       </div>
@@ -153,67 +161,67 @@
           <input type="radio" id="image2" name="event" class="img">
           <label for="image2">
             <img src="assets/img-event/Image2.svg" alt="img2">
-            Aniversário
+            Infantil
           </label>
         
           <input type="radio" id="image3" name="event" class="img">
           <label for="image3">
             <img src="assets/img-event/Image3.svg" alt="img3">
-            Aniversário
+            Formatura 
           </label>
         
           <input type="radio" id="image4" name="event" class="img">
           <label for="image4">
             <img src="assets/img-event/Image4.svg" alt="img4">
-            Aniversário
+            Casamento
           </label>
         
           <input type="radio" id="image5" name="event" class="img">
           <label for="image5">
             <img src="assets/img-event/Image5.svg" alt="img5">
-            Aniversário
+            Chá de bebê
           </label>
         
           <input type="radio" id="image6" name="event" class="img">
           <label for="image6">
             <img src="assets/img-event/Image6.svg" alt="img6">
-            Aniversário
+            Chá de panela
           </label>
         
           <input type="radio" id="image7" name="event" class="img">
           <label for="image7">
             <img src="assets/img-event/Image7.svg" alt="img7">
-            Aniversário
+            Carnaval
           </label>
         
           <input type="radio" id="image8" name="event" class="img">
           <label for="image8">
             <img src="assets/img-event/Image8.svg" alt="img8">
-            Aniversário
+            Páscoa
           </label>
         
           <input type="radio" id="image9" name="event" class="img">
           <label for="image9">
             <img src="assets/img-event/Image9.svg" alt="img9">
-            Aniversário
+            São João
           </label>
         
           <input type="radio" id="image10" name="event" class="img">
           <label for="image10">
             <img src="assets/img-event/Image10.svg" alt="img10">
-            Aniversário
+            Halloween
           </label>
         
           <input type="radio" id="image11" name="event" class="img">
           <label for="image11">
             <img src="assets/img-event/Image11.svg" alt="img11">
-            Aniversário
+            Natal
           </label>
         
           <input type="radio" id="image12" name="event" class="img">
           <label for="image12">
             <img src="assets/img-event/Image12.svg" alt="img12">
-            Aniversário
+            Outro
           </label>
         </div>
 
