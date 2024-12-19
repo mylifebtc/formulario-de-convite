@@ -1,0 +1,159 @@
+
+   /* BUTTON AND FILE */
+
+.botao {
+  width: 64px;
+  height: 32px;
+  background-color: var(--input-base);
+  border-radius: 20px;
+  border: 1px solid var(--input-stroke);
+}
+
+.bolinha {
+  background-color: var(--input-stroke);
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  top: 50%;
+  left:5px;
+  transform: translateY(+10%);
+  margin-left: 4px;
+}
+
+
+.button {
+display: flex;
+flex-direction: column;
+gap: .75rem;
+width: 30%;
+ 
+
+ span {
+  color: var(--text-heading);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  align-self: center;
+ }
+
+}
+
+
+.botao {
+  margin-top: .5rem;
+
+}
+
+
+.button-file {
+  display: flex;
+  flex-direction: row;
+  width: 560px;
+  gap: 2rem;
+
+
+}
+
+.label-button {
+ margin-left: .2rem;
+}
+
+
+
+.file {
+display: flex;
+flex-direction: column;
+gap: .75rem;
+width: 70%;
+ 
+
+ h3 {
+
+  color: var(--text-body);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+
+ }
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+  }
+
+
+  label {
+    padding: 12px 4px;
+    background-color: var(--shape-button);
+    width: 119px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 0;
+    display: inline;
+  }
+
+
+  span {
+    align-self: center;
+    color: var(--input-placeholder);
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+
+#file-input {
+display: none;
+}
+
+
+ /* ALINHAMENTO DO ESTILO E FOTO DE CAPA */
+ 
+.button-escuro {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.file-selecionar {
+  display: flex;
+  flex-direction: row;
+  gap: .75rem;
+  align-items: center;
+}
+
+
+#label-file {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .55rem;
+  cursor: pointer;
+
+  img {
+    margin-left: .35rem;
+    margin-top: .25rem;
+  }
+}
+
+#label-file:hover {
+  background-color: var(--shape-hover);
+}
+
+.botao:active {
+  background-color: var(--brand-light);
+}
+
+.bolinha:active {
+  background-color: var(--text-heading);
+  border-radius: 100%;
+  margin-top: 3px;
+  top: -60%;
+  left: 5px;
+  transform: translateX(+130%);
+  }
+
+/* BUTTON AND FILE */

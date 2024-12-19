@@ -230,3 +230,8 @@ input[type="radio"]:hover + label {
   font-family: "Open Sans", sans-serif;
   color: var(--text-heading);
 }
+
+
+.select-event {
+  margin-bottom: 1.75rem;
+}

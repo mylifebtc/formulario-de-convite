@@ -36,7 +36,7 @@
       <header>
         Crie seu convite
       </header>
-      <form>
+      <form enctype="multipart/form-data">
       <div class="main-container">
       <fieldset>
         <div class="head">
@@ -223,10 +223,77 @@
             <img src="assets/img-event/Image12.svg" alt="img12">
             Outro
           </label>
+        </div> 
+    
+        <div class="button-file">
+          <div class="button">
+            <label class="label-button">Estilo</label>
+            <div class="button-escuro">
+              <div class="botao">
+                <div class="bolinha"></div>
+              </div>
+              <span>Escuro</span>
+            </div>
+          </div>
+
+          <div class="file">
+            <h3>Foto de capa</h3>
+            <div class="file-selecionar">
+            <label for="file-input" id="label-file">
+            <img src="assets/icons/upload.svg" alt="">Selecionar</label>
+            <span>Nenhum arquivo selecionado</span>
+            <input type="file" id="file-input" name="file-input">
+          </div>
+          </div>
+        </div>
+      </div>
+     <div class="three-container">
+      <div class="head" id="marg">
+        <img src="assets/icons/contact.svg" alt="ícone contato" id="contato-svg">
+        <span>Dados para contato</span>
+      </div>
+      <div class="input-contact">
+        <div class="input-wrapper">
+          <label for="nomes">Nome</label>
+          <input type="text" name="nomes" id="nomes" placeholder="Nome completo" required>
+          <div class="error">
+            <img src="assets/icons/circle-alert-red.svg" alt="ícone de erro">
+            <span>Campo Obrigatório</span>
+          </div>
+        </div>
+        <div class="input-wrapper" id="inline">
+          <div class="input-group" id="space">
+          <label for="mail">E-mail</label>
+          <input id="mail" type="email" name="mail" placeholder="exemplo@email.com">
+          </div>
+          <div class="input-group" id="space">
+          <label for="number">Telefone</label>
+          <input id="number" type="number" name="number" placeholder="(99) 99999-9999">
+          </div>
+        </div>
+      </div>
+      <div class="input-checkbox">
+        <div class="checkbox" id="margem-border">
+          <input type="checkbox" id="box" name="box" required>
+          <span>Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></span>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="box" name="box">
+          <span>Aceito receber atualizações e promoções por e-mail</span>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="box" name="box">
+          <span>Aceito receber atualizações e promoções por SMS</span>
         </div>
 
-         
+      <div class="action-button">
+        <button>
+          <img src="assets/icons/ticket1.svg" alt="">
+          <label>Gerar convite</label>
+        </button>
       </div>
+      </div>
+     </div>
      </div>
     </fieldset>
       </div>
